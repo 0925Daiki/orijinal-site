@@ -1,0 +1,199 @@
+.welcome{
+    background-image: url(./assets/img/angkor-g0db6a43bb_1920.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+.welcome > h1 {
+    font-size: 80px;
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+   
+}
+
+@keyframes rotation{
+    0%{ transform:rotate(0);}
+    100%{ transform:rotate(360deg); }
+  }
+
+.welcome >ol{
+    font-size: 50px;
+    animation-name: fadeInAnime;
+    animation-duration:3s;
+    animation-delay: 2s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+    }
+    
+    @keyframes fadeInAnime{
+      0% {
+        opacity: 0;
+      }
+    
+      100% {
+        opacity: 1;
+      }
+    }
+
+.guideline > li > a{
+    color:#FFFFFF;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.guideline > li > a:hover{
+    color: red;
+     font-size: 50px;
+     transition: 1s;
+}
+
+#iseki div{
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    margin: 50px 50px 0px 50px;
+    background-color: orange;
+    border: solid 3px black;
+ 
+}
+  
+#shizen div{
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    margin: 50px 50px 0px 50px;
+    background-color: yellowgreen;
+    border: solid 3px black;
+    /* border: solid 2px black; */
+  
+}
+
+ 
+#building div{
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    margin: 50px 50px 0px 50px;
+    background-color: skyblue;
+    border: solid 3px black;
+    /* border: solid 2px black; */
+
+}
+
+.picture {
+    padding: 10px;
+    margin: 0px 50px;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    
+}
+.picture img:hover{
+        transform:scale(1.5,1.5);
+        transition: 2s;
+      
+}
+
+.item {
+    padding: 30px;
+    width: 40%;
+
+} 
+
+.item > img {
+    width: 55vh;
+    height: 55vh; 
+} 
+
+.item > h2 {
+    font-size: 40px;
+}
+
+#isekifirst{
+    color: gold;
+    font-size: 30px;
+}
+
+#isekisecond{
+    color: silver;
+    font-size: 30px;
+}
+
+#isekithird{
+    color: brown;
+    font-size: 30px;
+}
+
+#shizenfirst{
+    color: gold;
+    font-size: 30px;
+}
+
+#shizensecond{
+    color: silver;
+    font-size: 30px;
+}
+
+#shizenthird{
+    color: brown;
+    font-size: 30px;
+}
+
+#buildingfirst{
+    color: gold;
+    font-size: 30px;
+}
+
+#buildingsecond{
+    color: silver;
+    font-size: 30px;
+}
+
+#buildingthird{
+    color: brown;
+    font-size: 30px;
+}
+
+button{
+    border-radius: 5px;
+    border: solid 1px gray;
+    animation: bgcolor 3s infinite;
+}
+
+@keyframes bgcolor {
+    0%{ background-color: #FFFFFF;}
+    10%{ background-color: rgb(249, 234, 234);}
+    20%{ background-color: rgb(250, 211, 211);}
+    30%{ background-color: rgb(248, 190, 190);}
+    40%{ background-color: rgb(248, 151, 151);}
+    50%{ background-color: rgb(253, 116, 116);}
+    60%{ background-color: rgb(251, 92, 92);}
+    70%{ background-color: rgb(250, 72, 72);}
+    80%{ background-color: rgb(248, 45, 45);}
+    100%{ background-color: red;}
+}
+
+.map{
+    text-align: center;
+    padding: 50px;
+
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    margin-top: 100px;
+    font-size: 20px;
+}
